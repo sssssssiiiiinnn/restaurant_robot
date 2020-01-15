@@ -34,7 +34,7 @@ class Roboko(object):
         self.restaurant_list = pd.read_csv(FILE_PATH)
         self.restaurant_list = self.restaurant_list.loc[:, ["NAME", "COUNT"]]
         self.restaurant_list.sort_values("COUNT")
-        print(f"init : {self.restaurant_list}")
+        self.customer_name = ""
 
     @talk
     def customer_name_check(self):
